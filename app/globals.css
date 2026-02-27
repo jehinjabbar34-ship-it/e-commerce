@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+
+/* @import "tailwindcss"; */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  :root {
+    --background: 30 25% 97%;
+    --foreground: 220 20% 12%;
+
+    --card: 30 20% 99%;
+    --card-foreground: 220 20% 12%;
+
+    --popover: 30 20% 99%;
+    --popover-foreground: 220 20% 12%;
+
+    --primary: 12 60% 52%;
+    --primary-foreground: 30 25% 97%;
+
+    --secondary: 30 15% 92%;
+    --secondary-foreground: 220 20% 12%;
+
+    --muted: 30 12% 94%;
+    --muted-foreground: 220 10% 46%;
+
+    --accent: 38 80% 55%;
+    --accent-foreground: 220 20% 12%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 30 25% 97%;
+
+    --border: 30 15% 88%;
+    --input: 30 15% 88%;
+    --ring: 12 60% 52%;
+
+    --radius: 0.625rem;
+
+    --sidebar-background: 30 20% 96%;
+    --sidebar-foreground: 220 20% 12%;
+    --sidebar-primary: 12 60% 52%;
+    --sidebar-primary-foreground: 30 25% 97%;
+    --sidebar-accent: 30 15% 92%;
+    --sidebar-accent-foreground: 220 20% 12%;
+    --sidebar-border: 30 15% 88%;
+    --sidebar-ring: 12 60% 52%;
+
+    /* Custom tokens */
+    --card-shadow: 0 1px 3px 0 hsl(220 20% 12% / 0.04), 0 1px 2px -1px hsl(220 20% 12% / 0.04);
+    --card-shadow-hover: 0 10px 25px -5px hsl(220 20% 12% / 0.08), 0 8px 10px -6px hsl(220 20% 12% / 0.04);
+    --badge-success: 152 56% 40%;
+    --badge-success-foreground: 152 56% 97%;
+  }
+
+  .dark {
+    --background: 220 20% 8%;
+    --foreground: 30 15% 92%;
+
+    --card: 220 18% 11%;
+    --card-foreground: 30 15% 92%;
+
+    --popover: 220 18% 11%;
+    --popover-foreground: 30 15% 92%;
+
+    --primary: 12 60% 55%;
+    --primary-foreground: 30 25% 97%;
+
+    --secondary: 220 15% 18%;
+    --secondary-foreground: 30 15% 92%;
+
+    --muted: 220 15% 18%;
+    --muted-foreground: 220 10% 55%;
+
+    --accent: 38 80% 55%;
+    --accent-foreground: 220 20% 12%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 30 25% 97%;
+
+    --border: 220 15% 20%;
+    --input: 220 15% 20%;
+    --ring: 12 60% 55%;
+
+    --sidebar-background: 220 20% 8%;
+    --sidebar-foreground: 30 15% 92%;
+    --sidebar-primary: 12 60% 55%;
+    --sidebar-primary-foreground: 30 25% 97%;
+    --sidebar-accent: 220 15% 18%;
+    --sidebar-accent-foreground: 30 15% 92%;
+    --sidebar-border: 220 15% 20%;
+    --sidebar-ring: 12 60% 55%;
+  }
+}
+
+/* @layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+  }
+} */
+
+@layer utilities {
+  .font-display {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}

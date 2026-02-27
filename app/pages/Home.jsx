@@ -22,10 +22,10 @@ const HomePage = () => {
             const matchesSearch =
                 product.title
                     .toLowerCase()
-                    .includes(searchQuery.toLowerCase()) ||
-                product.description
-                    .toLowerCase()
-                    .includes(searchQuery.toLowerCase());
+                    .includes(searchQuery.toLowerCase())
+                // product.description
+                //     .toLowerCase()
+                //     .includes(searchQuery.toLowerCase());
             const matchesCategory =
                 activeCategory === "All" || product.category === activeCategory;
             return matchesSearch && matchesCategory;
